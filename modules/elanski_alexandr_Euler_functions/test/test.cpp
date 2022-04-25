@@ -3,14 +3,14 @@
 #include <gtest/gtest.h>
 #include "include/Euler_functions.h"
 
-TEST(Function_Euler, test_with_1) {
-    Euler f;
-    EXPECT_EQ(1, f.Function_Euler(1));
-}
-
 TEST(Function_Euler, test_with_2) {
     Euler f;
     EXPECT_EQ(1, f.Function_Euler(2));
+}
+
+TEST(Function_Euler, test_with_1) {
+    Euler f;
+    EXPECT_EQ(1, f.Function_Euler(1));
 }
 
 TEST(Function_Euler, test_with_3) {
