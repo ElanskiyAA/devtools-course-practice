@@ -5,7 +5,7 @@
 
 #include <iostream>
 
-class Euler {
+class СlassForFunctions {
  public:
     int Function_Euler(int number);
 };

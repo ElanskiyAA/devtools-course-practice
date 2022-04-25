@@ -4,7 +4,7 @@
 #include <gtest/gtest.h>
 #include <utility>
 
-int Euler::Function_Euler(int number) {
+int СlassForFunctions::Function_Euler(int number) {
     int result = number;
     for (int i = 2; i * i <= number; ++i) {
         if (number % i == 0) {
