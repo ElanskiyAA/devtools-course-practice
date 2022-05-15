@@ -19,7 +19,8 @@ std::string Application::getHelp(const std::string& appname) {
 }
 
 std::string Application::operator()(int argc, const char** argv) {
-    int a, b, result;
+    int a, b;
+    double result;
 
     if (argc == 1)
         return getHelp(argv[0]);

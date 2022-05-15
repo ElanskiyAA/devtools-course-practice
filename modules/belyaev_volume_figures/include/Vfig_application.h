@@ -4,6 +4,7 @@
 #define MODULES_BELYAEV_VOLUME_FIGURES_INCLUDE_VFIG_APPLICATION_H_
 
 #include <string>
+#include <math.h>
 
 #include "include/Vfig.h"
 
