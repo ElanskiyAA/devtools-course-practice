@@ -27,17 +27,17 @@ std::string Application::operator()(int argc, const char** argv) {
 
     try {
         if (argc == 2) {
-            std::string error_msg = "Should be 2 argument.\nYou entered one\n";
+            std::string error_msg = "Should be 2 argument";
             throw std::runtime_error(error_msg);
         }
         if (argc > 3) {
-            std::string error_msg = "Should be 2 argument.\nYou entered more\n";
+            std::string error_msg = "Should be 2 argument";
             throw std::runtime_error(error_msg);
         }
         a = parseArgument(argv[1]);
         b = parseArgument(argv[2]);
         if (a > b) {
-            std::string error_msg = "First arg more than second\n";
+            std::string error_msg = "First arg more than second";
             throw std::runtime_error(error_msg);
         }
     }
@@ -64,6 +64,6 @@ bool Application::checkArgument(const std::string& str) {
 
 int Application::parseArgument(const char* arg) {
     if (!checkArgument(arg))
-        throw std::runtime_error("Error occured: Wrong argument type.\n");
+        throw std::runtime_error("Wrong argument type");
     return std::stoi(arg);
 }
