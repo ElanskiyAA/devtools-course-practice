@@ -48,7 +48,6 @@ std::string Application::operator()(int argc, const char** argv) {
 
     Body_Volume bv;
     result = bv.calculation_volume_cube(a, b);
-
     std::ostringstream oss;
     oss << result;
     return oss.str();
